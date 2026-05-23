@@ -1,0 +1,185 @@
+.chat-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f0f2f5;
+  font-family: Arial;
+}
+
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.doctor-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.doctor-info img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: gray;
+}
+
+
+.call-btn {
+  background: #48d325;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 70%;
+}
+
+.message.me {
+  align-self: flex-end;
+}
+
+.message.other {
+  align-self: flex-start;
+}
+
+.bubble {
+  padding: 10px;
+  border-radius: 15px;
+  background: white;
+}
+
+.message.me .bubble {
+  background: #dcf8c6;
+}
+
+.msg-info {
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+/* INPUT */
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  background: #0084ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+
+.call-popup {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.video-box {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+video {
+  width: 550px;
+  border-radius: 10px;
+}
+
+
+
+.end-call-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.end-call-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 20px;
+  height: 40px;
+ margin-top: 150px;
+ margin-right: 250px;
+}
+
+
+.end-call-btn:hover {
+  background: #d70015;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: red;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+
+.message:hover .delete-btn {
+  opacity: 1;
+}
+
+
+.delete-btn:hover {
+  transform: scale(1.2);
+  color: darkred;
+}
+
+.tick {
+  font-size: 12px;
+  margin-left: 6px;
+  color: gray;
+}
+
+.message.me .tick {
+  color: #4caf50;
+}
